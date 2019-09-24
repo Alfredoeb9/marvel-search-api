@@ -1,0 +1,49 @@
+//  UNIVERSLA STYLE FOR PAGE  
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  -o-box-sizing: inherit;
+}
+
+// html body {
+//   height: 100%;
+//   width: 100%;
+//   margin: 0px;
+//   padding: 0px;
+//   overflow-x: hidden;
+// }
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  
+  @include respond(desk) {
+    font-size: 58%;
+  }
+  @include respond(tablet) {
+    font-size: 52.5%;
+  }
+  
+  @include respond(phone-land) {
+    font-size: 42.5%
+  }
+  @include respond(phone) {
+    font-size: 40%;
+  }
+  
+  
+  @include respond(big-desk) {
+    font-size: 70.5%; //
+  }
+
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}

@@ -1,0 +1,41 @@
+/*
+//  MEDIA QUERY MANAGER
+// 0 - 575.98px: Phone
+// 576px - 767.98px:  Landscape Phones
+// 768px - 991.98px:  Tablets
+//  992px - 1199.98px: Desktops
+//  1800px : big Desktops
+
+$breakpoint arguement choices:
+- phone
+- phone-land
+- tab
+- desk
+- big-desk
+
+ORDER: Base + typograpgy > general layout + grid > page layout > components
+
+1em = 16px // em's are better for media queries
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == xsPhone {
+    @media(max-width: 30em) { @content }; // 480px
+  }
+  @if $breakpoint == phone {
+    @media(max-width: 36em) { @content }; //575.98px
+  }
+  @if $breakpoint == phone-land {
+    @media(max-width: 48em) { @content };  //767.98px
+  }
+  @if $breakpoint == tablet {
+    @media(max-width: 62em) { @content };  //991.98px
+  }
+  @if $breakpoint == desk {
+    @media(max-width: 75em) { @content }; //1199.98px
+  }
+  @if $breakpoint == big-desk {
+    @media(min-width: 112.5em) { @content }; //1800px
+  }
+
+ }
