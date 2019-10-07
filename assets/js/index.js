@@ -11,6 +11,7 @@ let metaDetail = document.querySelector('.meta_detail');
 let metaWiki = document.querySelector('.meta_wiki');
 let metaComic = document.querySelector('.meta_comic');
 let output;
+let currentCharacter = [];
 
 
 let setup = () => {
