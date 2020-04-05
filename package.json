@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "browserslist": ["last 2 version"],
+  "browserslist": [
+    "last 2 version"
+  ],
   "keywords": [],
   "author": "Alfredo Barillas",
   "license": "ISC",
@@ -17,7 +19,7 @@
   "devDependencies": {
     "@babel/register": "^7.0.0",
     "autoprefixer": "^9.3.0",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.7",
     "cssnano": "^4.1.7",
     "del": "^3.0.0",
     "gulp": "github:gulpjs/gulp#v4.0.0-alpha.3",
